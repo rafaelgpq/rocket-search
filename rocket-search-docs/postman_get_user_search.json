@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "89165f11-6faa-45f4-b315-ab9c4efbc1ec",
+		"name": "Rocket search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token oFwnf9K6p4K93AGf9PQZlQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"rafael\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://v1.rocketapi.io/instagram/user/search",
+					"protocol": "https",
+					"host": [
+						"v1",
+						"rocketapi",
+						"io"
+					],
+					"path": [
+						"instagram",
+						"user",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"username\": \"rafaelpadron\",\n    \"full_name\": \"Rafael Padron\",\n    \"profile_pic_url\": \"https://example.com/profile.jpg\",\n    \"profile_pic_id\": \"1234567890\"\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/save-users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"save-users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
