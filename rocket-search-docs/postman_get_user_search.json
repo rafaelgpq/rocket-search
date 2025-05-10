@@ -15,7 +15,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token oFwnf9K6p4K93AGf9PQZlQ",
+						"value": "Token {{ROCKET_API_TOKEN}}",
 						"type": "text"
 					}
 				],

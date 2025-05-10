@@ -6,7 +6,7 @@ import UserCard from "./components/UserCard";
 import Header from "./components/Header";
 
 const API_URL = "https://v1.rocketapi.io/instagram/user/search";
-const API_TOKEN = "oFwnf9K6p4K93AGf9PQZlQ";
+const API_TOKEN = process.env.REACT_APP_ROCKET_API_TOKEN;
 
 function App() {
   const [query, setQuery] = useState("");
