@@ -54,14 +54,18 @@ rocket-search/
 ### 1. Install all dependencies
 
 At the root of the project, run:
+```bash
 npm install
+```
 
 ### 2. Run the Application
 
 Run backend and frontend together (Recommended)
 
 At the root, run:
+```bash
 npm run dev
+```
 
 ### 3. Open the Application
 
@@ -72,8 +76,10 @@ Backend API server will be available at:
 http://localhost:3001
 
 ### QUICK START EXAMPLE
+```bash
 npm install
 npm run dev
+```
 
 ---
 
@@ -117,6 +123,7 @@ The `rocket-search-docs/` folder includes a Postman collection to manually test 
 - Set the request **Body** to `raw` ➔ `JSON` format, with example content like:
 
 Postman JSON request body (on Body: raw + JSON):
+```json
 [
   {
     "username": "rafaelpadron",
@@ -125,6 +132,7 @@ Postman JSON request body (on Body: raw + JSON):
     "profile_pic_id": "1234567890"
   }
 ]
+```
 
 ✅ If the server responds with 200 OK, your users.json will be updated successfully with the posted users' data.
 
@@ -205,6 +213,13 @@ the backend provides a clean `/save-users` endpoint to:
 
 ---
 
+## 🔐 Environment Variables
+
+Before running the app, create a `.env` file in the root directory. Use `.env.example` as a guide:
+
+```bash
+cp .env.example .env
+```
 
 ---
 
