@@ -23,6 +23,7 @@ This project fully satisfies the AAALife Frontend Interview assignment requireme
 
 ## 📋 Project Structure
 
+```text
 rocket-search/
 ├── public/ # Static public assets 
 │   ├── temp/                             # Cached profile images
@@ -46,6 +47,7 @@ rocket-search/
 ├── rocket-search-docs/
 │   ├── postman_get_user_search.json      # Postman Collection Request
 │   ├── AAALife_Frontend_Interview_Assignment_Rafael_Padron.docx
+```
 
 ---
 
